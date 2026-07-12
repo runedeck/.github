@@ -1,0 +1,24 @@
+name: Bug report
+description: Something behaves wrong
+labels: [bug]
+body:
+    - type: textarea
+      id: what
+      attributes:
+          label: What happened
+          description: The failing invocation, error output, or wrong behavior.
+      validations:
+          required: true
+
+    - type: textarea
+      id: expected
+      attributes:
+          label: What you expected
+      validations:
+          required: true
+
+    - type: textarea
+      id: environment
+      attributes:
+          label: Environment
+          description: OS, tool version (`forge --version` or equivalent), harness if relevant.

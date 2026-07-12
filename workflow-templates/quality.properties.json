@@ -1,0 +1,5 @@
+{
+    "name": "Quality",
+    "description": "Rune Deck standard checks: prek commit-stage hooks plus the pre-push secret scan.",
+    "categories": ["Automation"]
+}
