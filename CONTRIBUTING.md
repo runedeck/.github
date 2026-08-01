@@ -21,8 +21,8 @@ An agent working alone commits under its own author identity, no trailer needed.
 
 Nothing merges on a single opinion:
 
-1. Automated review bots comment on every PR.
-2. Cross-vendor agent review — at least one agent from a different vendor than the author reads the diff.
+1. Review lanes answer maintainer-applied labels — bare `review` walks the full funnel (cursor, then macroscope, then the adjudicating correctness lane), and no lane reviews unsummoned.
+2. Cross-vendor by construction — the lanes span vendors different from the author's.
 3. A human approves and merges.
 
 ## Checks
