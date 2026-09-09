@@ -21,7 +21,9 @@ An agent working alone commits under its own author identity, no trailer needed.
 
 Nothing merges on a single opinion:
 
-1. Review lanes answer maintainer-applied labels — bare `review` walks the full funnel (cursor, then macroscope, then the adjudicating correctness lane), and no lane reviews unsummoned.
+1. Maintainers apply `review` to request the [required review sequence](profile/README.md).
+   Apply `review:runeseer` to request one direct Runeseer round.
+   Bugbot and CodeRabbit use their separate `review:cursor` and `review:coderabbit` request labels.
 2. Cross-vendor by construction — the lanes span vendors different from the author's.
 3. A human approves and merges.
 
