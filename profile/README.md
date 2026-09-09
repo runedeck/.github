@@ -4,4 +4,12 @@ Instructions for AI coding agents, treated like source code: authored in markdow
 
 Work here is built by a mixed crew — Claude, Codex, Grok, Gemini — with human review on every merge. Commit trailers name who wrote what.
 
-Same-repository pull requests walk a review funnel before they reach the owner: cursor, then macroscope, then an adjudicating correctness lane whose clean verdict earns the approving review; fork contributions run the free lanes and end at the owner's review. The machinery lives in [seer](https://github.com/runedeck/seer), the archetype in [skeleton](https://github.com/runedeck/skeleton), and releases are vouched for by owner-signed tags (see [SECURITY](https://github.com/runedeck/.github/blob/main/SECURITY.md)).
+Same-repository pull requests pass through Macroscope correctness review, then Runeseer adjudication,
+before they reach the owner.
+A clean Runeseer verdict on the current head earns its approving review.
+Bugbot and CodeRabbit provide optional reviews.
+A skipped review is not approval.
+Fork contributions use the available free lanes and end at the owner's review.
+The machinery lives in [seer](https://github.com/runedeck/seer).
+The archetype lives in [skeleton](https://github.com/runedeck/skeleton).
+Owner-signed tags verify releases, as [SECURITY](https://github.com/runedeck/.github/blob/main/SECURITY.md) describes.
